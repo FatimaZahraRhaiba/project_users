@@ -1,0 +1,42 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+.card{
+  border: solid peachpuff;
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+
+.cards{
+  padding: 10px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .cards:hover{
+  
+} */
+
+.cards .name{
+  font-size: 25px;
+}
+
+.btn-filter{
+  background-color: peachpuff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
