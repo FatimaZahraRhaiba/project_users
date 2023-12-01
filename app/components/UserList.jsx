@@ -1,10 +1,10 @@
-import UserCrad from "./UserCrad";
+import UserCard from "./UserCard";
 
 export default function UserList({ users} ) {
   return (
     <>
         {users.map((user) => (
-            <UserCrad key={user.id} user={user} />
+            <UserCard key={user.id} user={user} />
         ))}
     </>  
   )

@@ -1,4 +1,4 @@
-export default function UserCrad({user,index}) {
+export default function UserCard({user,index}) {
   return (
           <div key={index} className='card'>
           <h3> Name: <span className='name'> {user.name}</span></h3>
