@@ -2,41 +2,96 @@
 @tailwind components;
 @tailwind utilities; */
 
-
-.card{
-  border: solid peachpuff;
-  width: 20%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 20px;
+body{
+  font-family: "Mabry", "Mabry Pro", sans-serif;
 }
 
+.card{
+  border: 1px solid #ccc;
+  width: 20%;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 2px #87A0CE; 
+  padding: 10px;
+  border-radius: 0.8em;
+  background-color: #fefefe;
+}
+
+.card:hover{
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.friends{
+  font-weight: bold;
+  color: #007bff;
+}
 
 .cards{
   padding: 10px;
-  margin: auto;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+
+
+.cards .name{
+  font-size: 25px;
+  color: grey;
+
+}
+.card-friend{
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
-/* .cards:hover{
-  
-} */
-
-.cards .name{
-  font-size: 25px;
-}
-
 .btn-filter{
-  background-color: peachpuff;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  font-size: 18px;
+  color: #90a8ed;
+  background-color: white;
+  padding: 5px;
+  font-size: 15px;
   margin-left: 5px;
   margin-right: 5px;
+  border: 1px solid #90a8ed;
   border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.btn-filter:hover{
+  color: white;
+  background-color: #6785e1;
+}
+
+.interests {
+  /* background-color: #E2E9F9; */
+  text-align: left;
+  padding: 5px 0 0 10px ;
+  line-height: 5px;
+}
+
+.interests ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.interests ul li {
+  border: 1px solid #87A0CE;
+  color: #87A0CE;
+  background-color: white;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 2px 7px 0;
+  padding: 8px;
+  font-weight: bold;
+  text-transform: capitalize;
 }

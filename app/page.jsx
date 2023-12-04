@@ -2,7 +2,6 @@
 import Image from 'next/image'
 
 import users from './users/generated_users.json'
-import UserCrad from './components/UserCard'
 import FilterButton from './components/FilterButton'
 import { useState } from 'react'
 import UserList from './components/UserList'
@@ -18,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <h1>Users page</h1>
-      <FilterButton interests={['music', 'reading', 'sports', 'cooking', 'travel']} onClick={handleFilter}/>
+      Filter by: <FilterButton interests={['music', 'reading', 'sports', 'cooking', 'travel']} onClick={handleFilter}/>
 
       <div className='cards'>
         <UserList users={filteredUsers} />
